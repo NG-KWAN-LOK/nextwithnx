@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "my-library": "libs/my-library",
+    "new-frontend": "apps/new-frontend",
+    "new-frontend-e2e": "apps/new-frontend-e2e",
+    "next-frontend": "apps/next-frontend",
+    "next-frontend-e2e": "apps/next-frontend-e2e",
+    "ui": "libs/ui"
+  }
+}
