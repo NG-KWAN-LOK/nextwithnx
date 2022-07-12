@@ -1,7 +1,6 @@
-import { useState } from 'react';
 import styled from '@emotion/styled';
-import { RadioGroup } from '@mui/material';
 import { Radio } from '@next-with-nx/ui';
+import { myWord } from '@next-with-nx/my-library';
 
 const StyledPage = styled.div`
   .page {
@@ -25,6 +24,7 @@ export function Index() {
         label="JUI"
         control={undefined}
       />
+      <div>{myWord()}</div>
       <div className="wrapper">
         <div className="container">
           <div id="welcome">

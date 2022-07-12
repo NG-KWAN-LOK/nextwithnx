@@ -1,4 +1,5 @@
 import styles from './index.module.css';
+import { myWord } from '@next-with-nx/my-library';
 
 export function Index() {
   /*
@@ -8,6 +9,7 @@ export function Index() {
    */
   return (
     <div className={styles.page}>
+      <div>{myWord()}</div>
       <div className="wrapper">
         <div className="container">
           <div id="welcome">

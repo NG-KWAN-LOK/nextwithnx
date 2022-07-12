@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@next-with-nx/my-library": ["libs/my-library/src/index.ts"],
       "@next-with-nx/ui": ["libs/ui/src/index.ts"]
     }
   },
