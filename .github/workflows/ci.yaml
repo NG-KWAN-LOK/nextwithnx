@@ -24,9 +24,8 @@ jobs:
       - run: npx nx affected --target=test --base=origin/master --parallel
       - run: npx nx affected --target=build --base=origin/master --parallel
 
-agents:
-  runs-on: ubuntu-latest
-  name: Nx Cloud - Agents
-  uses: nrwl/ci/.github/workflows/nx-cloud-agents.yml@v0.6
-  with:
-    number-of-agents: 3
+  agents:
+    name: Nx Cloud - Agents
+    uses: nrwl/ci/.github/workflows/nx-cloud-agents.yml@v0.6
+    with:
+      number-of-agents: 3
