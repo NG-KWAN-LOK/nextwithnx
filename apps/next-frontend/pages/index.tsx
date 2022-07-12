@@ -20,8 +20,8 @@ export function Index() {
         labelPlacement="end"
         color="secondary"
         size="medium"
-        value="JUI"
-        label="JUI"
+        value="Nice"
+        label="Nice"
         control={undefined}
       />
       <div>{myWord()}</div>

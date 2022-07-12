@@ -81,8 +81,8 @@ WithLabel.args = {
   labelPlacement: 'end',
   color: 'secondary',
   size: 'medium',
-  value: 'JUI',
-  label: 'JUI',
+  value: 'UI-Lib',
+  label: 'UI-Lib',
 };
 
 const RadioWithCaption = (props: RadioProps) => {
@@ -112,12 +112,12 @@ WithCaption.args = {
   labelPlacement: 'end',
   color: 'secondary',
   size: 'medium',
-  value: 'JUI',
-  label: 'JUI',
+  value: 'UI-Lib',
+  label: 'UI-Lib',
 };
 
 const RadioWithFormGroup = (props: RadioProps) => {
-  const options: string[] = ['JUI', 'MUI', 'MUIX'];
+  const options: string[] = ['UI-Lib', 'MUI', 'MUIX'];
   const [value, setValue] = React.useState<string>('');
   const [error, setError] = React.useState<boolean>(false);
   const [helperText, setHelperText] = React.useState<string>('Choose wisely');
@@ -135,7 +135,7 @@ const RadioWithFormGroup = (props: RadioProps) => {
       return;
     }
 
-    if (value === 'JUI') {
+    if (value === 'UI-Lib') {
       setHelperText('You got it!');
       setError(false);
     } else {
