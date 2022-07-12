@@ -11,8 +11,7 @@ jobs:
     name: Verify PR
     steps:
       - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
+      - uses: bahmutov/npm-install@v1.8.17
       - run: npx nx affected -- --target=lint --base=origin/master --parallel
       - run: npx nx affected -- --target=test --base=origin/master --parallel
       - run: npx nx affected -- --target=build --base=origin/master --parallel
