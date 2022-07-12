@@ -1,0 +1,18 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    name: Verify PR
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - run: npx nx affected -- --target=lint --base=origin/master --parallel
+      - run: npx nx affected -- --target=test --base=origin/master --parallel
+      - run: npx nx affected -- --target=build --base=origin/master --parallel
