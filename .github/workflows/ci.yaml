@@ -2,7 +2,7 @@ name: CI
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
 
 jobs:
@@ -12,6 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: bahmutov/npm-install@v1.8.17
-      - run: npx nx affected -- --target=lint --base=origin/master --parallel
-      - run: npx nx affected -- --target=test --base=origin/master --parallel
-      - run: npx nx affected -- --target=build --base=origin/master --parallel
+      - run: npm ci
+      - run: npx nx affected --target=lint --base=master --parallel
+      - run: npx nx affected --target=test --base=master --parallel
+      - run: npx nx affected --target=build --base=master --parallel
