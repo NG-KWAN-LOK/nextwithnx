@@ -1,36 +1,19 @@
-import styled from '@emotion/styled';
-import { Radio } from '@next-with-nx/ui';
-import { myWord } from '@next-with-nx/my-library';
-
-const StyledPage = styled.div`
-  .page {
-  }
-`;
+import styles from './index.module.css';
 
 export function Index() {
   /*
    * Replace the elements below with your own.
    *
-   * Note: The corresponding styles are in the ./index.@emotion/styled file.
+   * Note: The corresponding styles are in the ./index.css file.
    */
   return (
-    <StyledPage>
-      <Radio
-        disabled={false}
-        labelPlacement="end"
-        color="secondary"
-        size="medium"
-        value="Nice"
-        label="Nice"
-        control={undefined}
-      />
-      <div>{myWord()}</div>
+    <div className={styles.page}>
       <div className="wrapper">
         <div className="container">
           <div id="welcome">
             <h1>
               <span> Hello there, </span>
-              Welcome junyiacademy 👋
+              Welcome my-frontend 👋
             </h1>
           </div>
 
@@ -425,7 +408,7 @@ export function Index() {
           </p>
         </div>
       </div>
-    </StyledPage>
+    </div>
   );
 }
 

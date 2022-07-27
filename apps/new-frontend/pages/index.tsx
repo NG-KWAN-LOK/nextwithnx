@@ -10,6 +10,7 @@ export function Index() {
   return (
     <div className={styles.page}>
       <div>{myWord()}</div>
+      <div>Say</div>
       <div className="wrapper">
         <div className="container">
           <div id="welcome">
