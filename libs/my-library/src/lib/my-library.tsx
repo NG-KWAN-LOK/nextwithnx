@@ -1,4 +1,4 @@
 /* eslint-disable-next-line */
 export const myWord = () => {
-  return 'Here is my';
+  return 'Here is my library';
 };

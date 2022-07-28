@@ -1,5 +1,4 @@
 import styles from './index.module.css';
-import { myWord } from '@next-with-nx/my-library';
 
 export function Index() {
   /*
@@ -9,14 +8,12 @@ export function Index() {
    */
   return (
     <div className={styles.page}>
-      <div>{myWord()}</div>
-      <div>Say</div>
       <div className="wrapper">
         <div className="container">
           <div id="welcome">
             <h1>
               <span> Hello there, </span>
-              Welcome new-frontend 👋
+              Welcome my-frontend 👋
             </h1>
           </div>
 
